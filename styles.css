@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: right 50vw bottom 60vh, left 44vw top 52vh;
+  background-color: var(--Dark-cyan);
+}
+
+section {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  gap: 1.5rem;
+  padding: 5rem 1rem 2rem 1rem;
+  border-radius: 20px;
+}
+
+section img {
+  border-radius: 50%;
+  border: 4px solid var(--white);
+}
+
+.personal-info {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+hr {
+  width: 320px;
+  border: 1px solid #e9e9e9;
+}
+.list-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.personal-info h1 {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.personal-info p {
+  color: var(--Dark-grayish-blue);
+  font-size: 18px;
+}
+
+.location {
+  color: var(--Dark-grayish-blue);
+}
+
+.numbers {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info {
+  font-size: 0.8rem;
+  color: var(--Dark-gray);
+}
+
+@media (min-width: 900px) {
+  body {
+    background-size: unset;
+    background-position: right 51vw bottom 35vh, left 50vw top 50vh;
+  }
+  section {
+    width: 350px;
+  }
+  .list-wrapper ul {
+    gap: 3.5rem;
+  }
+}
