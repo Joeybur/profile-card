@@ -46,6 +46,7 @@ section {
   gap: 1.5rem;
   padding: 5rem 1rem 2rem 1rem;
   border-radius: 20px;
+  box-shadow: 0 35px 35px 10px rgba(0, 0, 0, 0.2);
 }
 
 section img {
